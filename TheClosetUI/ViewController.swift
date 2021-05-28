@@ -51,6 +51,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.separatorStyle = .none
         self.setupHeaderView()
         self.setupFooterView()
+        self.tableView.autoresizingMask = UIView.AutoresizingMask.flexibleHeight
         self.view.layoutIfNeeded()
         tableView.scrollToBottom(animated: true)
 //        navigationItem.rightBarButtonItem =
